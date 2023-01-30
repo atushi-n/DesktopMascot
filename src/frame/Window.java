@@ -9,6 +9,7 @@ public class Window extends JFrame {
 
     public Mascot m;
     private Point mouseDownCompCoords;
+    private boolean flg = true;
 
     //コンストラクタ
     public Window() {
@@ -37,6 +38,10 @@ public class Window extends JFrame {
 
     }
 
+    public boolean getFlg(){
+        return this.flg;
+    }
+
 
     private void createMascot(Window window) {
         m = new Mascot(this);
@@ -45,9 +50,10 @@ public class Window extends JFrame {
             @Override
             public void mouseClicked(MouseEvent e) {
                 System.out.println("クリックされました");
-                if (e.getClickCount() == 3) {
+                if (e.getClickCount() == 2) {
                     //匿名クラスのせいできもい書き方になってる
                     Window.this.dispatchEvent(new WindowEvent(Window.this, WindowEvent.WINDOW_CLOSING));//ウィンドウにウィンドウクローズイベントを投げる
+                    flg = false;
                 }
             }
 

@@ -7,7 +7,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class UserInterface extends JFrame implements ActionListener{
+public class UserInterface extends JFrame implements ActionListener {
+
     private JButton createButton;
     private Manager manager;
 
