@@ -61,7 +61,6 @@ public class Mascot extends JPanel {
 
         this.setBackground(new Color(0, 0, 0, 0));//JPanelの背景を透明に
 
-
         x = new int[COLS];
         y = new int[ROWS];
 

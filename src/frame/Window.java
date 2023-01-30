@@ -22,7 +22,6 @@ public class Window extends JFrame {
         //ウィンドウ（自分）の設定
 
         this.setListener();//ウィンドウのマウス操作の反応を設定
-        this.setDefaultCloseOperation(EXIT_ON_CLOSE);//×を押してウィンドウが閉じると、プログラムも終了する
         this.setSize(m.getWidth(), m.getHeight());//ウィンドウサイズ
         this.setLocationRelativeTo(null);
         this.setUndecorated(true);//フレームの装飾をしない
